@@ -34,11 +34,11 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground leading-tight mb-6"
+            className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-foreground leading-[1.1] mb-6 tracking-tight"
           >
-            Custom-Made
+            Artisan Crafted
             <br />
-            <span className="text-primary">Just For You</span>
+            <span className="text-primary italic">Just For You</span>
           </motion.h1>
 
           <motion.p
