@@ -1,39 +1,56 @@
 import { Product, Category } from '@/types/product';
 
+// Import product images
+import crochetBagImg from '@/assets/products/crochet-bag.jpg';
+import goldenTasselsImg from '@/assets/products/golden-tassels.jpg';
+import macrameHangingImg from '@/assets/products/macrame-hanging.jpg';
+import babyBootiesImg from '@/assets/products/baby-booties.jpg';
+import silkTasselsImg from '@/assets/products/silk-tassels.jpg';
+import amigurumiBearImg from '@/assets/products/amigurumi-bear.jpg';
+import crochetCoastersImg from '@/assets/products/crochet-coasters.jpg';
+import bridalTasselsImg from '@/assets/products/bridal-tassels.jpg';
+
+// Import category images
+import productCrochetBag from '@/assets/product-crochet-bag.jpg';
+import productSareeTassels from '@/assets/product-saree-tassels.jpg';
+import productMacrame from '@/assets/product-macrame.jpg';
+import productAmigurumi from '@/assets/product-amigurumi.jpg';
+import aboutCrafting from '@/assets/about-crafting.jpg';
+
 export const categories: Category[] = [
   {
     id: '1',
     name: 'Crochet Products',
     slug: 'crochet',
-    image: '/placeholder.svg',
+    image: productCrochetBag,
     description: 'Handmade crochet items crafted with love'
   },
   {
     id: '2',
     name: 'Saree Tassels',
     slug: 'saree-tassels',
-    image: '/placeholder.svg',
+    image: productSareeTassels,
     description: 'Elegant tassels for your beautiful sarees'
   },
   {
     id: '3',
     name: 'Custom Orders',
     slug: 'custom-orders',
-    image: '/placeholder.svg',
+    image: aboutCrafting,
     description: 'Made-to-order pieces just for you'
   },
   {
     id: '4',
     name: 'Gift Items',
     slug: 'gift-items',
-    image: '/placeholder.svg',
+    image: productAmigurumi,
     description: 'Perfect handmade gifts for your loved ones'
   },
   {
     id: '5',
     name: 'Home Decor',
     slug: 'decor',
-    image: '/placeholder.svg',
+    image: productMacrame,
     description: 'Beautiful handcrafted decor for your home'
   }
 ];
@@ -47,7 +64,7 @@ export const products: Product[] = [
     description: 'A beautifully handcrafted crochet bag featuring intricate floral patterns. Made with premium cotton yarn, this bag is perfect for everyday use or as a statement accessory. Each piece is unique and made with care.',
     shortDescription: 'Handmade floral crochet bag with premium cotton',
     category: 'crochet',
-    images: ['/placeholder.svg'],
+    images: [crochetBagImg],
     inStock: true,
     isMadeToOrder: false,
     colors: ['Cream', 'Blush Pink', 'Sage Green'],
@@ -61,7 +78,7 @@ export const products: Product[] = [
     description: 'Exquisite golden tassels handmade to add elegance to your sarees. These tassels feature intricate beadwork and are perfect for weddings and special occasions.',
     shortDescription: 'Elegant golden tassels with beadwork',
     category: 'saree-tassels',
-    images: ['/placeholder.svg'],
+    images: [goldenTasselsImg],
     inStock: true,
     isMadeToOrder: true,
     deliveryDays: 5,
@@ -75,7 +92,7 @@ export const products: Product[] = [
     description: 'A stunning macrame wall hanging that adds bohemian charm to any space. Handcrafted with natural cotton rope, this piece features intricate knotwork patterns.',
     shortDescription: 'Bohemian macrame wall art',
     category: 'decor',
-    images: ['/placeholder.svg'],
+    images: [macrameHangingImg],
     inStock: true,
     isMadeToOrder: false,
     sizes: ['Small (12")', 'Medium (18")', 'Large (24")'],
@@ -89,7 +106,7 @@ export const products: Product[] = [
     description: 'Adorable handmade baby booties perfect for gifting. Soft, comfortable, and made with baby-safe yarn.',
     shortDescription: 'Soft handmade booties for babies',
     category: 'gift-items',
-    images: ['/placeholder.svg'],
+    images: [babyBootiesImg],
     inStock: true,
     isMadeToOrder: true,
     deliveryDays: 3,
@@ -105,7 +122,7 @@ export const products: Product[] = [
     description: 'A set of 6 premium silk thread tassels in assorted colors. Perfect for sarees, lehengas, or craft projects.',
     shortDescription: 'Premium silk thread tassel set',
     category: 'saree-tassels',
-    images: ['/placeholder.svg'],
+    images: [silkTasselsImg],
     inStock: true,
     isMadeToOrder: false,
     featured: false
@@ -117,7 +134,7 @@ export const products: Product[] = [
     description: 'A cute and cuddly handmade teddy bear crafted in the Japanese amigurumi style. Perfect gift for children and collectors.',
     shortDescription: 'Handmade amigurumi teddy bear',
     category: 'gift-items',
-    images: ['/placeholder.svg'],
+    images: [amigurumiBearImg],
     inStock: false,
     isMadeToOrder: true,
     deliveryDays: 7,
@@ -132,7 +149,7 @@ export const products: Product[] = [
     description: 'Set of 6 beautiful crochet coasters in earthy tones. Adds a handmade touch to your table setting.',
     shortDescription: 'Handmade crochet coaster set',
     category: 'decor',
-    images: ['/placeholder.svg'],
+    images: [crochetCoastersImg],
     inStock: true,
     isMadeToOrder: false,
     colors: ['Earth Tones', 'Pastels', 'Neutrals'],
@@ -146,7 +163,7 @@ export const products: Product[] = [
     description: 'Luxurious bridal tassels with pearl and crystal embellishments. Custom-made to match your bridal saree.',
     shortDescription: 'Premium bridal tassels with crystals',
     category: 'saree-tassels',
-    images: ['/placeholder.svg'],
+    images: [bridalTasselsImg],
     inStock: true,
     isMadeToOrder: true,
     deliveryDays: 10,
